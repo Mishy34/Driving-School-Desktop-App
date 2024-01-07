@@ -4,7 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
     <RootNamespace>Driving_School_Desktop_App</RootNamespace>
-    <StartupObject>Sub Main</StartupObject>
+    <StartupObject>Driving_School_Desktop_App.My.MyApplication</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
   </PropertyGroup>

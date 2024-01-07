@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form1
+Partial Class Login
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,28 +22,30 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
         Label1 = New Label()
         PictureBox1 = New PictureBox()
         PictureBox2 = New PictureBox()
         Label2 = New Label()
-        TextBox1 = New TextBox()
-        TextBox2 = New TextBox()
+        TxtEmail = New TextBox()
+        TxtPassword = New TextBox()
         IconButton1 = New FontAwesome.Sharp.IconButton()
         IconButton2 = New FontAwesome.Sharp.IconButton()
         IconButton3 = New FontAwesome.Sharp.IconButton()
         Label3 = New Label()
         Label4 = New Label()
         Label5 = New Label()
+        btnPwUnhide = New FontAwesome.Sharp.IconPictureBox()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
+        CType(btnPwUnhide, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
         Label1.BackColor = Color.Transparent
-        Label1.Font = New Font("Titillium Web", 12.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.Font = New Font("Titillium Web", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.White
         Label1.Location = New Point(945, 222)
         Label1.Name = "Label1"
@@ -73,7 +75,7 @@ Partial Class Form1
         ' 
         Label2.AutoSize = True
         Label2.BackColor = Color.Transparent
-        Label2.Font = New Font("Titillium Web", 9.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Titillium Web", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.White
         Label2.Location = New Point(1009, 283)
         Label2.Name = "Label2"
@@ -81,31 +83,32 @@ Partial Class Form1
         Label2.TabIndex = 3
         Label2.Text = "New to Pass IT? "
         ' 
-        ' TextBox1
+        ' TxtEmail
         ' 
-        TextBox1.BackColor = Color.FromArgb(CByte(247), CByte(129), CByte(44))
-        TextBox1.BorderStyle = BorderStyle.None
-        TextBox1.Font = New Font("Titillium Web", 8.999999F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        TextBox1.ForeColor = Color.White
-        TextBox1.Location = New Point(1028, 387)
-        TextBox1.Multiline = True
-        TextBox1.Name = "TextBox1"
-        TextBox1.PlaceholderText = "Email address"
-        TextBox1.Size = New Size(314, 49)
-        TextBox1.TabIndex = 4
+        TxtEmail.BackColor = Color.FromArgb(CByte(247), CByte(129), CByte(44))
+        TxtEmail.BorderStyle = BorderStyle.None
+        TxtEmail.Font = New Font("Titillium Web", 8.999999F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        TxtEmail.ForeColor = Color.White
+        TxtEmail.Location = New Point(1028, 387)
+        TxtEmail.Multiline = True
+        TxtEmail.Name = "TxtEmail"
+        TxtEmail.PlaceholderText = "Email address"
+        TxtEmail.Size = New Size(314, 49)
+        TxtEmail.TabIndex = 4
         ' 
-        ' TextBox2
+        ' TxtPassword
         ' 
-        TextBox2.BackColor = Color.FromArgb(CByte(247), CByte(129), CByte(44))
-        TextBox2.BorderStyle = BorderStyle.None
-        TextBox2.Font = New Font("Titillium Web", 8.999999F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
-        TextBox2.ForeColor = Color.White
-        TextBox2.Location = New Point(1028, 501)
-        TextBox2.Multiline = True
-        TextBox2.Name = "TextBox2"
-        TextBox2.PlaceholderText = "Password"
-        TextBox2.Size = New Size(314, 49)
-        TextBox2.TabIndex = 5
+        TxtPassword.BackColor = Color.FromArgb(CByte(247), CByte(129), CByte(44))
+        TxtPassword.BorderStyle = BorderStyle.None
+        TxtPassword.Font = New Font("Titillium Web", 8.999999F, FontStyle.Italic, GraphicsUnit.Point, CByte(0))
+        TxtPassword.ForeColor = Color.White
+        TxtPassword.Location = New Point(1028, 501)
+        TxtPassword.Multiline = True
+        TxtPassword.Name = "TxtPassword"
+        TxtPassword.PasswordChar = "*"c
+        TxtPassword.PlaceholderText = "Password"
+        TxtPassword.Size = New Size(314, 49)
+        TxtPassword.TabIndex = 5
         ' 
         ' IconButton1
         ' 
@@ -157,7 +160,7 @@ Partial Class Form1
         ' 
         Label3.AutoSize = True
         Label3.BackColor = Color.Transparent
-        Label3.Font = New Font("Titillium Web", 9.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label3.Font = New Font("Titillium Web", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label3.ForeColor = Color.White
         Label3.Location = New Point(958, 565)
         Label3.Name = "Label3"
@@ -169,7 +172,7 @@ Partial Class Form1
         ' 
         Label4.AutoSize = True
         Label4.BackColor = Color.Transparent
-        Label4.Font = New Font("Titillium Web", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label4.Font = New Font("Titillium Web", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label4.ForeColor = Color.White
         Label4.Location = New Point(1145, 565)
         Label4.Name = "Label4"
@@ -181,7 +184,7 @@ Partial Class Form1
         ' 
         Label5.AutoSize = True
         Label5.BackColor = Color.Transparent
-        Label5.Font = New Font("Titillium Web", 9.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Label5.Font = New Font("Titillium Web", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label5.ForeColor = Color.White
         Label5.Location = New Point(1176, 283)
         Label5.Name = "Label5"
@@ -189,32 +192,48 @@ Partial Class Form1
         Label5.TabIndex = 11
         Label5.Text = "Register"
         ' 
-        ' Form1
+        ' btnPwUnhide
         ' 
-        AutoScaleDimensions = New SizeF(13.0F, 32.0F)
+        btnPwUnhide.BackColor = Color.FromArgb(CByte(247), CByte(129), CByte(44))
+        btnPwUnhide.ForeColor = Color.FromArgb(CByte(128), CByte(123), CByte(132))
+        btnPwUnhide.IconChar = FontAwesome.Sharp.IconChar.EyeSlash
+        btnPwUnhide.IconColor = Color.FromArgb(CByte(128), CByte(123), CByte(132))
+        btnPwUnhide.IconFont = FontAwesome.Sharp.IconFont.Auto
+        btnPwUnhide.IconSize = 50
+        btnPwUnhide.Location = New Point(1293, 495)
+        btnPwUnhide.Name = "btnPwUnhide"
+        btnPwUnhide.Size = New Size(50, 50)
+        btnPwUnhide.TabIndex = 12
+        btnPwUnhide.TabStop = False
+        ' 
+        ' Login
+        ' 
+        AutoScaleDimensions = New SizeF(13F, 32F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.White
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         ClientSize = New Size(1500, 950)
+        Controls.Add(btnPwUnhide)
         Controls.Add(Label5)
         Controls.Add(Label4)
         Controls.Add(Label3)
         Controls.Add(IconButton3)
         Controls.Add(IconButton2)
         Controls.Add(IconButton1)
-        Controls.Add(TextBox2)
-        Controls.Add(TextBox1)
+        Controls.Add(TxtPassword)
+        Controls.Add(TxtEmail)
         Controls.Add(Label2)
         Controls.Add(PictureBox2)
         Controls.Add(PictureBox1)
         Controls.Add(Label1)
         DoubleBuffered = True
         FormBorderStyle = FormBorderStyle.None
-        Name = "Form1"
+        Name = "Login"
         StartPosition = FormStartPosition.CenterScreen
-        Text = "Form1"
+        Text = "Login"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
+        CType(btnPwUnhide, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -224,13 +243,14 @@ Partial Class Form1
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TxtEmail As TextBox
+    Friend WithEvents TxtPassword As TextBox
     Friend WithEvents IconButton1 As FontAwesome.Sharp.IconButton
     Friend WithEvents IconButton2 As FontAwesome.Sharp.IconButton
     Friend WithEvents IconButton3 As FontAwesome.Sharp.IconButton
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
+    Friend WithEvents btnPwUnhide As FontAwesome.Sharp.IconPictureBox
 
 End Class
