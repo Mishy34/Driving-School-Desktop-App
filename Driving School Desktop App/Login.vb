@@ -3,12 +3,22 @@
     Private clickCount As Integer
 
     Private Sub IconButton3_Click(sender As Object, e As EventArgs) Handles IconButton3.Click
-        If TxtEmail.Text = "jaky@gmail.com" And TxtPassword.Text = "Newpw@123" Then
+        If TxtEmail.Text = "student@gmail.com" And TxtPassword.Text = "Newpw1@123" Then
             MessageBox1.Show()
             MessageBox1.MessageName.Text = "Successfull Login"
             MessageBox1.Message.Text = "You are successfully logged in !"
             MessageBox1.MessageButton.Text = "Ok"
+            MessageBox1.DashboardType = "Student"
             Me.Hide()
+
+        ElseIf TxtEmail.Text = "admin@gmail.com" And TxtPassword.Text = "Newpw2@123" Then
+            MessageBox1.Show()
+            MessageBox1.MessageName.Text = "Successfull Login"
+            MessageBox1.Message.Text = "You are successfully logged in !"
+            MessageBox1.MessageButton.Text = "Ok"
+            MessageBox1.DashboardType = "Admin"
+            Me.Hide()
+
         Else
             MessageBox1.Show()
             MessageBox1.MessageName.Text = "Incorrect credentials"

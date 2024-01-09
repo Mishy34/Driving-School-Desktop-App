@@ -25,9 +25,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="DashboardAdmin.vb">
+    <Compile Update="Admin\DashboardAdmin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Admin\LessonMatIntroductory.vb" />
+    <Compile Update="Admin\LessonMaterials.vb" />
+    <Compile Update="Admin\MngSchedule.vb" />
+    <Compile Update="Admin\InsDetails.vb" />
+    <Compile Update="Admin\ProgressUpload.vb" />
+    <Compile Update="Admin\Requests.vb" />
     <Compile Update="My Project\Application.Designer.vb">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>

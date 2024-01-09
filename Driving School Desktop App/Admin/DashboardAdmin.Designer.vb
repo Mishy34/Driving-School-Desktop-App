@@ -28,11 +28,12 @@ Partial Class DashboardAdmin
         labelcurrentForm = New Label()
         iconCurrentForm = New FontAwesome.Sharp.IconPictureBox()
         PanelMenu = New Panel()
-        btnInstructor = New FontAwesome.Sharp.IconButton()
-        btnBooking = New FontAwesome.Sharp.IconButton()
+        BtnRequests = New FontAwesome.Sharp.IconButton()
         btnProgress = New FontAwesome.Sharp.IconButton()
-        btnSchedule = New FontAwesome.Sharp.IconButton()
         btnLessons = New FontAwesome.Sharp.IconButton()
+        btnSchedules = New FontAwesome.Sharp.IconButton()
+        btnInstructors = New FontAwesome.Sharp.IconButton()
+        btnStudents = New FontAwesome.Sharp.IconButton()
         PanelLogo = New Panel()
         imgHome = New PictureBox()
         PanelDesktop = New Panel()
@@ -92,11 +93,12 @@ Partial Class DashboardAdmin
         ' 
         ' PanelMenu
         ' 
-        PanelMenu.Controls.Add(btnInstructor)
-        PanelMenu.Controls.Add(btnBooking)
+        PanelMenu.Controls.Add(BtnRequests)
         PanelMenu.Controls.Add(btnProgress)
-        PanelMenu.Controls.Add(btnSchedule)
         PanelMenu.Controls.Add(btnLessons)
+        PanelMenu.Controls.Add(btnSchedules)
+        PanelMenu.Controls.Add(btnInstructors)
+        PanelMenu.Controls.Add(btnStudents)
         PanelMenu.Controls.Add(PanelLogo)
         PanelMenu.Dock = DockStyle.Left
         PanelMenu.Location = New Point(0, 80)
@@ -104,49 +106,27 @@ Partial Class DashboardAdmin
         PanelMenu.Size = New Size(375, 870)
         PanelMenu.TabIndex = 1
         ' 
-        ' btnInstructor
+        ' BtnRequests
         ' 
-        btnInstructor.Dock = DockStyle.Top
-        btnInstructor.FlatAppearance.BorderSize = 0
-        btnInstructor.FlatStyle = FlatStyle.Flat
-        btnInstructor.Font = New Font("Neue Haas Unica Med", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btnInstructor.ForeColor = Color.FromArgb(CByte(128), CByte(123), CByte(132))
-        btnInstructor.IconChar = FontAwesome.Sharp.IconChar.IdBadge
-        btnInstructor.IconColor = Color.FromArgb(CByte(128), CByte(123), CByte(132))
-        btnInstructor.IconFont = FontAwesome.Sharp.IconFont.Solid
-        btnInstructor.IconSize = 50
-        btnInstructor.ImageAlign = ContentAlignment.MiddleLeft
-        btnInstructor.Location = New Point(0, 612)
-        btnInstructor.Name = "btnInstructor"
-        btnInstructor.Padding = New Padding(10, 0, 20, 0)
-        btnInstructor.Size = New Size(375, 103)
-        btnInstructor.TabIndex = 5
-        btnInstructor.Text = "Contact Instructor"
-        btnInstructor.TextAlign = ContentAlignment.MiddleLeft
-        btnInstructor.TextImageRelation = TextImageRelation.ImageBeforeText
-        btnInstructor.UseVisualStyleBackColor = True
-        ' 
-        ' btnBooking
-        ' 
-        btnBooking.Dock = DockStyle.Top
-        btnBooking.FlatAppearance.BorderSize = 0
-        btnBooking.FlatStyle = FlatStyle.Flat
-        btnBooking.Font = New Font("Neue Haas Unica Med", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btnBooking.ForeColor = Color.FromArgb(CByte(128), CByte(123), CByte(132))
-        btnBooking.IconChar = FontAwesome.Sharp.IconChar.CalendarCheck
-        btnBooking.IconColor = Color.FromArgb(CByte(128), CByte(123), CByte(132))
-        btnBooking.IconFont = FontAwesome.Sharp.IconFont.Solid
-        btnBooking.IconSize = 50
-        btnBooking.ImageAlign = ContentAlignment.MiddleLeft
-        btnBooking.Location = New Point(0, 509)
-        btnBooking.Name = "btnBooking"
-        btnBooking.Padding = New Padding(10, 0, 20, 0)
-        btnBooking.Size = New Size(375, 103)
-        btnBooking.TabIndex = 4
-        btnBooking.Text = "Book a lesson"
-        btnBooking.TextAlign = ContentAlignment.MiddleLeft
-        btnBooking.TextImageRelation = TextImageRelation.ImageBeforeText
-        btnBooking.UseVisualStyleBackColor = True
+        BtnRequests.Dock = DockStyle.Top
+        BtnRequests.FlatAppearance.BorderSize = 0
+        BtnRequests.FlatStyle = FlatStyle.Flat
+        BtnRequests.Font = New Font("Neue Haas Unica Med", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        BtnRequests.ForeColor = Color.FromArgb(CByte(128), CByte(123), CByte(132))
+        BtnRequests.IconChar = FontAwesome.Sharp.IconChar.CommentDots
+        BtnRequests.IconColor = Color.FromArgb(CByte(128), CByte(123), CByte(132))
+        BtnRequests.IconFont = FontAwesome.Sharp.IconFont.Solid
+        BtnRequests.IconSize = 50
+        BtnRequests.ImageAlign = ContentAlignment.MiddleLeft
+        BtnRequests.Location = New Point(0, 715)
+        BtnRequests.Name = "BtnRequests"
+        BtnRequests.Padding = New Padding(10, 0, 20, 0)
+        BtnRequests.Size = New Size(375, 103)
+        BtnRequests.TabIndex = 6
+        BtnRequests.Text = "Requests"
+        BtnRequests.TextAlign = ContentAlignment.MiddleLeft
+        BtnRequests.TextImageRelation = TextImageRelation.ImageBeforeText
+        BtnRequests.UseVisualStyleBackColor = True
         ' 
         ' btnProgress
         ' 
@@ -160,37 +140,15 @@ Partial Class DashboardAdmin
         btnProgress.IconFont = FontAwesome.Sharp.IconFont.Solid
         btnProgress.IconSize = 50
         btnProgress.ImageAlign = ContentAlignment.MiddleLeft
-        btnProgress.Location = New Point(0, 406)
+        btnProgress.Location = New Point(0, 612)
         btnProgress.Name = "btnProgress"
         btnProgress.Padding = New Padding(10, 0, 20, 0)
         btnProgress.Size = New Size(375, 103)
-        btnProgress.TabIndex = 3
-        btnProgress.Text = "Progress"
+        btnProgress.TabIndex = 5
+        btnProgress.Text = "Progress upload"
         btnProgress.TextAlign = ContentAlignment.MiddleLeft
         btnProgress.TextImageRelation = TextImageRelation.ImageBeforeText
         btnProgress.UseVisualStyleBackColor = True
-        ' 
-        ' btnSchedule
-        ' 
-        btnSchedule.Dock = DockStyle.Top
-        btnSchedule.FlatAppearance.BorderSize = 0
-        btnSchedule.FlatStyle = FlatStyle.Flat
-        btnSchedule.Font = New Font("Neue Haas Unica Med", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        btnSchedule.ForeColor = Color.FromArgb(CByte(128), CByte(123), CByte(132))
-        btnSchedule.IconChar = FontAwesome.Sharp.IconChar.ClipboardList
-        btnSchedule.IconColor = Color.FromArgb(CByte(128), CByte(123), CByte(132))
-        btnSchedule.IconFont = FontAwesome.Sharp.IconFont.Solid
-        btnSchedule.IconSize = 50
-        btnSchedule.ImageAlign = ContentAlignment.MiddleLeft
-        btnSchedule.Location = New Point(0, 303)
-        btnSchedule.Name = "btnSchedule"
-        btnSchedule.Padding = New Padding(10, 0, 20, 0)
-        btnSchedule.Size = New Size(375, 103)
-        btnSchedule.TabIndex = 2
-        btnSchedule.Text = "Schedules"
-        btnSchedule.TextAlign = ContentAlignment.MiddleLeft
-        btnSchedule.TextImageRelation = TextImageRelation.ImageBeforeText
-        btnSchedule.UseVisualStyleBackColor = True
         ' 
         ' btnLessons
         ' 
@@ -204,15 +162,81 @@ Partial Class DashboardAdmin
         btnLessons.IconFont = FontAwesome.Sharp.IconFont.Solid
         btnLessons.IconSize = 50
         btnLessons.ImageAlign = ContentAlignment.MiddleLeft
-        btnLessons.Location = New Point(0, 200)
+        btnLessons.Location = New Point(0, 509)
         btnLessons.Name = "btnLessons"
         btnLessons.Padding = New Padding(10, 0, 20, 0)
         btnLessons.Size = New Size(375, 103)
-        btnLessons.TabIndex = 1
-        btnLessons.Text = "Lesson Materials"
+        btnLessons.TabIndex = 4
+        btnLessons.Text = "Lessons"
         btnLessons.TextAlign = ContentAlignment.MiddleLeft
         btnLessons.TextImageRelation = TextImageRelation.ImageBeforeText
         btnLessons.UseVisualStyleBackColor = True
+        ' 
+        ' btnSchedules
+        ' 
+        btnSchedules.Dock = DockStyle.Top
+        btnSchedules.FlatAppearance.BorderSize = 0
+        btnSchedules.FlatStyle = FlatStyle.Flat
+        btnSchedules.Font = New Font("Neue Haas Unica Med", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnSchedules.ForeColor = Color.FromArgb(CByte(128), CByte(123), CByte(132))
+        btnSchedules.IconChar = FontAwesome.Sharp.IconChar.CalendarCheck
+        btnSchedules.IconColor = Color.FromArgb(CByte(128), CByte(123), CByte(132))
+        btnSchedules.IconFont = FontAwesome.Sharp.IconFont.Solid
+        btnSchedules.IconSize = 50
+        btnSchedules.ImageAlign = ContentAlignment.MiddleLeft
+        btnSchedules.Location = New Point(0, 406)
+        btnSchedules.Name = "btnSchedules"
+        btnSchedules.Padding = New Padding(10, 0, 20, 0)
+        btnSchedules.Size = New Size(375, 103)
+        btnSchedules.TabIndex = 3
+        btnSchedules.Text = "Schedules"
+        btnSchedules.TextAlign = ContentAlignment.MiddleLeft
+        btnSchedules.TextImageRelation = TextImageRelation.ImageBeforeText
+        btnSchedules.UseVisualStyleBackColor = True
+        ' 
+        ' btnInstructors
+        ' 
+        btnInstructors.Dock = DockStyle.Top
+        btnInstructors.FlatAppearance.BorderSize = 0
+        btnInstructors.FlatStyle = FlatStyle.Flat
+        btnInstructors.Font = New Font("Neue Haas Unica Med", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnInstructors.ForeColor = Color.FromArgb(CByte(128), CByte(123), CByte(132))
+        btnInstructors.IconChar = FontAwesome.Sharp.IconChar.ChalkboardUser
+        btnInstructors.IconColor = Color.FromArgb(CByte(128), CByte(123), CByte(132))
+        btnInstructors.IconFont = FontAwesome.Sharp.IconFont.Solid
+        btnInstructors.IconSize = 50
+        btnInstructors.ImageAlign = ContentAlignment.MiddleLeft
+        btnInstructors.Location = New Point(0, 303)
+        btnInstructors.Name = "btnInstructors"
+        btnInstructors.Padding = New Padding(10, 0, 20, 0)
+        btnInstructors.Size = New Size(375, 103)
+        btnInstructors.TabIndex = 2
+        btnInstructors.Text = "Instructors"
+        btnInstructors.TextAlign = ContentAlignment.MiddleLeft
+        btnInstructors.TextImageRelation = TextImageRelation.ImageBeforeText
+        btnInstructors.UseVisualStyleBackColor = True
+        ' 
+        ' btnStudents
+        ' 
+        btnStudents.Dock = DockStyle.Top
+        btnStudents.FlatAppearance.BorderSize = 0
+        btnStudents.FlatStyle = FlatStyle.Flat
+        btnStudents.Font = New Font("Neue Haas Unica Med", 10F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnStudents.ForeColor = Color.FromArgb(CByte(128), CByte(123), CByte(132))
+        btnStudents.IconChar = FontAwesome.Sharp.IconChar.UserGraduate
+        btnStudents.IconColor = Color.FromArgb(CByte(128), CByte(123), CByte(132))
+        btnStudents.IconFont = FontAwesome.Sharp.IconFont.Solid
+        btnStudents.IconSize = 50
+        btnStudents.ImageAlign = ContentAlignment.MiddleLeft
+        btnStudents.Location = New Point(0, 200)
+        btnStudents.Name = "btnStudents"
+        btnStudents.Padding = New Padding(10, 0, 20, 0)
+        btnStudents.Size = New Size(375, 103)
+        btnStudents.TabIndex = 1
+        btnStudents.Text = "Students"
+        btnStudents.TextAlign = ContentAlignment.MiddleLeft
+        btnStudents.TextImageRelation = TextImageRelation.ImageBeforeText
+        btnStudents.UseVisualStyleBackColor = True
         ' 
         ' PanelLogo
         ' 
@@ -267,13 +291,14 @@ Partial Class DashboardAdmin
     Friend WithEvents PanelMenu As Panel
     Friend WithEvents PanelLogo As Panel
     Friend WithEvents imgHome As PictureBox
-    Friend WithEvents btnLessons As FontAwesome.Sharp.IconButton
-    Friend WithEvents btnInstructor As FontAwesome.Sharp.IconButton
-    Friend WithEvents btnBooking As FontAwesome.Sharp.IconButton
+    Friend WithEvents btnStudents As FontAwesome.Sharp.IconButton
     Friend WithEvents btnProgress As FontAwesome.Sharp.IconButton
-    Friend WithEvents btnSchedule As FontAwesome.Sharp.IconButton
+    Friend WithEvents btnLessons As FontAwesome.Sharp.IconButton
+    Friend WithEvents btnSchedules As FontAwesome.Sharp.IconButton
+    Friend WithEvents btnInstructors As FontAwesome.Sharp.IconButton
     Friend WithEvents iconCurrentForm As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents labelcurrentForm As Label
     Friend WithEvents PanelDesktop As Panel
     Friend WithEvents Label1 As Label
+    Friend WithEvents BtnRequests As FontAwesome.Sharp.IconButton
 End Class

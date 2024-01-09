@@ -71,30 +71,12 @@ Public Class DashboardAdmin
         labelcurrentForm.Text = childForm.Text
     End Sub
 
-    Private Sub btnLessons_Click(sender As Object, e As EventArgs) Handles btnLessons.Click
+    Private Sub btnStudents_Click(sender As Object, e As EventArgs) Handles btnStudents.Click
         ActivateButton(sender, Color.FromArgb(246, 107, 7))
-        OpenChildForm(New Lessons)
+        OpenChildForm(New StdDetails)
     End Sub
 
-    Private Sub btnSchedule_Click(sender As Object, e As EventArgs) Handles btnSchedule.Click
-        ActivateButton(sender, Color.FromArgb(246, 107, 7))
-        OpenChildForm(New Schedule)
-    End Sub
 
-    Private Sub btnProgress_Click(sender As Object, e As EventArgs) Handles btnProgress.Click
-        ActivateButton(sender, Color.FromArgb(246, 107, 7))
-        OpenChildForm(New Progress)
-    End Sub
-
-    Private Sub btnBooking_Click(sender As Object, e As EventArgs) Handles btnBooking.Click
-        ActivateButton(sender, Color.FromArgb(246, 107, 7))
-        OpenChildForm(New BookingLessons)
-    End Sub
-
-    Private Sub btnInstructor_Click(sender As Object, e As EventArgs) Handles btnInstructor.Click
-        ActivateButton(sender, Color.FromArgb(246, 107, 7))
-        OpenChildForm(New Instructor)
-    End Sub
 
     Private Sub Reset()
         DisableButton()
@@ -111,5 +93,28 @@ Public Class DashboardAdmin
         Reset()
     End Sub
 
+    Private Sub btnInstructors_Click(sender As Object, e As EventArgs) Handles btnInstructors.Click
+        ActivateButton(sender, Color.FromArgb(246, 107, 7))
+        OpenChildForm(New InsDetails)
+    End Sub
 
+    Private Sub btnSchedules_Click(sender As Object, e As EventArgs) Handles btnSchedules.Click
+        ActivateButton(sender, Color.FromArgb(246, 107, 7))
+        OpenChildForm(New MngSchedule)
+    End Sub
+
+    Private Sub btnLessons_Click(sender As Object, e As EventArgs) Handles btnLessons.Click
+        ActivateButton(sender, Color.FromArgb(246, 107, 7))
+        OpenChildForm(New LessonMaterials)
+    End Sub
+
+    Private Sub btnProgress_Click(sender As Object, e As EventArgs) Handles btnProgress.Click
+        ActivateButton(sender, Color.FromArgb(246, 107, 7))
+        OpenChildForm(New ProgressUpload)
+    End Sub
+
+    Private Sub BtnRequests_Click(sender As Object, e As EventArgs) Handles BtnRequests.Click
+        ActivateButton(sender, Color.FromArgb(246, 107, 7))
+        OpenChildForm(New Requests)
+    End Sub
 End Class

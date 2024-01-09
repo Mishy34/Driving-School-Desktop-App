@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Lessons
+Partial Class LessonMaterials
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,7 +22,7 @@ Partial Class Lessons
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Lessons))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LessonMaterials))
         Panel1 = New Panel()
         btnIntroductory = New FontAwesome.Sharp.IconButton()
         PictureBox1 = New PictureBox()
@@ -48,11 +48,10 @@ Partial Class Lessons
         Panel17 = New Panel()
         Panel18 = New Panel()
         Heading = New Label()
-        subHeading = New Label()
-        Label2 = New Label()
         Panel19 = New Panel()
         btnDrivingTest = New FontAwesome.Sharp.IconButton()
         PictureBox4 = New PictureBox()
+        subHeading = New Label()
         Panel1.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         Panel7.SuspendLayout()
@@ -84,7 +83,7 @@ Partial Class Lessons
         btnIntroductory.Dock = DockStyle.Bottom
         btnIntroductory.FlatAppearance.BorderSize = 0
         btnIntroductory.FlatStyle = FlatStyle.Flat
-        btnIntroductory.Font = New Font("Neue Haas Unica Med", 11.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnIntroductory.Font = New Font("Neue Haas Unica Med", 11F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnIntroductory.ForeColor = Color.White
         btnIntroductory.IconChar = FontAwesome.Sharp.IconChar.None
         btnIntroductory.IconColor = Color.Black
@@ -170,7 +169,7 @@ Partial Class Lessons
         btnStandard.Dock = DockStyle.Bottom
         btnStandard.FlatAppearance.BorderSize = 0
         btnStandard.FlatStyle = FlatStyle.Flat
-        btnStandard.Font = New Font("Neue Haas Unica Med", 11.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnStandard.Font = New Font("Neue Haas Unica Med", 11F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnStandard.ForeColor = Color.White
         btnStandard.IconChar = FontAwesome.Sharp.IconChar.None
         btnStandard.IconColor = Color.Black
@@ -326,32 +325,11 @@ Partial Class Lessons
         Heading.AutoSize = True
         Heading.Font = New Font("Neue Haas Unica Med", 13.8749981F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Heading.ForeColor = Color.FromArgb(CByte(128), CByte(123), CByte(132))
-        Heading.Location = New Point(45, 41)
+        Heading.Location = New Point(46, 65)
         Heading.Name = "Heading"
         Heading.Size = New Size(347, 56)
         Heading.TabIndex = 6
         Heading.Text = "Lesson Catalogue"
-        ' 
-        ' subHeading
-        ' 
-        subHeading.AutoSize = True
-        subHeading.Font = New Font("Titillium Web", 11.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        subHeading.ForeColor = Color.Black
-        subHeading.Location = New Point(46, 109)
-        subHeading.Name = "subHeading"
-        subHeading.Size = New Size(687, 46)
-        subHeading.TabIndex = 7
-        subHeading.Text = "You have 2 lessons and 1 exam booking to complete!"
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.Font = New Font("Titillium Web", 9.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label2.Location = New Point(318, 174)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(489, 36)
-        Label2.TabIndex = 8
-        Label2.Text = "Click on a lesson type to view recorded lessons!"
         ' 
         ' Panel19
         ' 
@@ -379,7 +357,7 @@ Partial Class Lessons
         btnDrivingTest.Name = "btnDrivingTest"
         btnDrivingTest.Size = New Size(890, 122)
         btnDrivingTest.TabIndex = 10
-        btnDrivingTest.Text = "Expert in driving? Click here to book your trial exams !"
+        btnDrivingTest.Text = "Driving Test Preparations"
         btnDrivingTest.UseVisualStyleBackColor = False
         ' 
         ' PictureBox4
@@ -393,21 +371,31 @@ Partial Class Lessons
         PictureBox4.TabIndex = 0
         PictureBox4.TabStop = False
         ' 
-        ' Lessons
+        ' subHeading
         ' 
-        AutoScaleDimensions = New SizeF(13.0F, 32.0F)
+        subHeading.AutoSize = True
+        subHeading.Font = New Font("Titillium Web", 11F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        subHeading.ForeColor = Color.Black
+        subHeading.Location = New Point(45, 134)
+        subHeading.Name = "subHeading"
+        subHeading.Size = New Size(537, 46)
+        subHeading.TabIndex = 7
+        subHeading.Text = "Click the lesson type to upload materials."
+        ' 
+        ' LessonMaterials
+        ' 
+        AutoScaleDimensions = New SizeF(13F, 32F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(246), CByte(238), CByte(233))
         ClientSize = New Size(1125, 870)
         Controls.Add(Panel19)
-        Controls.Add(Label2)
         Controls.Add(subHeading)
         Controls.Add(Heading)
         Controls.Add(Panel13)
         Controls.Add(Panel7)
         Controls.Add(Panel1)
         FormBorderStyle = FormBorderStyle.None
-        Name = "Lessons"
+        Name = "LessonMaterials"
         Text = "Form3"
         Panel1.ResumeLayout(False)
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
@@ -440,15 +428,14 @@ Partial Class Lessons
     Friend WithEvents Panel17 As Panel
     Friend WithEvents Panel18 As Panel
     Friend WithEvents Heading As Label
-    Friend WithEvents subHeading As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents btnIntroductory As FontAwesome.Sharp.IconButton
     Friend WithEvents btnStandard As FontAwesome.Sharp.IconButton
     Friend WithEvents btnPassPlus As FontAwesome.Sharp.IconButton
-    Friend WithEvents Label2 As Label
     Friend WithEvents Panel19 As Panel
     Friend WithEvents PictureBox4 As PictureBox
     Friend WithEvents btnDrivingTest As FontAwesome.Sharp.IconButton
+    Friend WithEvents subHeading As Label
 End Class
