@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Booking
+Partial Class Progress
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,30 +22,16 @@ Partial Class Booking
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Label1 = New Label()
         SuspendLayout()
         ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.Location = New Point(508, 402)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(102, 32)
-        Label1.TabIndex = 0
-        Label1.Text = "Booking"
-        ' 
-        ' Booking
+        ' Progress
         ' 
         AutoScaleDimensions = New SizeF(13F, 32F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1125, 870)
-        Controls.Add(Label1)
         FormBorderStyle = FormBorderStyle.None
-        Name = "Booking"
-        Text = "Booking"
+        Name = "Progress"
+        Text = "Progress"
         ResumeLayout(False)
-        PerformLayout()
     End Sub
-
-    Friend WithEvents Label1 As Label
 End Class

@@ -1,9 +1,6 @@
 ﻿Public Class Login
 
-    Private clickCount As Integer = 0
-    Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
+    Private clickCount As Integer
 
     Private Sub IconButton3_Click(sender As Object, e As EventArgs) Handles IconButton3.Click
         If TxtEmail.Text = "jaky@gmail.com" And TxtPassword.Text = "Newpw@123" Then

@@ -88,7 +88,7 @@ Public Class Dashboard
 
     Private Sub btnBooking_Click(sender As Object, e As EventArgs) Handles btnBooking.Click
         ActivateButton(sender, Color.FromArgb(246, 107, 7))
-        OpenChildForm(New Booking)
+        OpenChildForm(New BookingLessons)
     End Sub
 
     Private Sub btnInstructor_Click(sender As Object, e As EventArgs) Handles btnInstructor.Click

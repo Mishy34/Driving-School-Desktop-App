@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Dashboard
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class DashboardAdmin
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,10 +20,11 @@ Partial Class Dashboard
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Dashboard))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(DashboardAdmin))
         PanelRibbon = New Panel()
+        Label1 = New Label()
         labelcurrentForm = New Label()
         iconCurrentForm = New FontAwesome.Sharp.IconPictureBox()
         PanelMenu = New Panel()
@@ -45,6 +46,7 @@ Partial Class Dashboard
         ' PanelRibbon
         ' 
         PanelRibbon.BackColor = Color.FromArgb(CByte(246), CByte(107), CByte(7))
+        PanelRibbon.Controls.Add(Label1)
         PanelRibbon.Controls.Add(labelcurrentForm)
         PanelRibbon.Controls.Add(iconCurrentForm)
         PanelRibbon.Dock = DockStyle.Top
@@ -52,6 +54,17 @@ Partial Class Dashboard
         PanelRibbon.Name = "PanelRibbon"
         PanelRibbon.Size = New Size(1500, 80)
         PanelRibbon.TabIndex = 0
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Titillium Web", 8.999999F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.ForeColor = Color.White
+        Label1.Location = New Point(1381, 23)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(80, 36)
+        Label1.TabIndex = 4
+        Label1.Text = "Admin"
         ' 
         ' labelcurrentForm
         ' 
@@ -213,7 +226,7 @@ Partial Class Dashboard
         ' imgHome
         ' 
         imgHome.Image = CType(resources.GetObject("imgHome.Image"), Image)
-        imgHome.Location = New Point(-62, -50)
+        imgHome.Location = New Point(-61, -33)
         imgHome.Name = "imgHome"
         imgHome.Size = New Size(482, 277)
         imgHome.SizeMode = PictureBoxSizeMode.Zoom
@@ -228,7 +241,7 @@ Partial Class Dashboard
         PanelDesktop.Size = New Size(1125, 870)
         PanelDesktop.TabIndex = 2
         ' 
-        ' Dashboard
+        ' DashboardAdmin
         ' 
         AutoScaleDimensions = New SizeF(13F, 32F)
         AutoScaleMode = AutoScaleMode.Font
@@ -238,7 +251,7 @@ Partial Class Dashboard
         Controls.Add(PanelMenu)
         Controls.Add(PanelRibbon)
         FormBorderStyle = FormBorderStyle.None
-        Name = "Dashboard"
+        Name = "DashboardAdmin"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Dashboard"
         PanelRibbon.ResumeLayout(False)
@@ -262,4 +275,5 @@ Partial Class Dashboard
     Friend WithEvents iconCurrentForm As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents labelcurrentForm As Label
     Friend WithEvents PanelDesktop As Panel
+    Friend WithEvents Label1 As Label
 End Class
