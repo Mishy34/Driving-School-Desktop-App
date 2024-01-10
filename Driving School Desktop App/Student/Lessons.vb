@@ -15,4 +15,27 @@ Public Class Lessons
         End If
 
     End Sub
+
+    Private Sub btnStandard_Click(sender As Object, e As EventArgs) Handles btnStandard.Click
+        MessageBox2.Show()
+        MessageBox2.MessageName.Text = "Standard Lessons"
+        MessageBox2.Message.Text = "You have not booked this lesson type !"
+        MessageBox2.Button1.Text = "Cancel"
+        MessageBox2.Button2.Text = "Book"
+    End Sub
+
+    Private Sub btnPassPlus_Click(sender As Object, e As EventArgs) Handles btnPassPlus.Click
+        MessageBox2.Show()
+        MessageBox2.MessageName.Text = "Pass plus Lessons"
+        MessageBox2.Message.Text = "You have not booked this lesson type !"
+        MessageBox2.Button1.Text = "Cancel"
+        MessageBox2.Button2.Text = "Book"
+    End Sub
+
+    Private Sub btnDrivingTest_Click(sender As Object, e As EventArgs) Handles btnDrivingTest.Click
+        MessageBox1.Show()
+        MessageBox1.MessageName.Text = "Driving Test Request"
+        MessageBox1.Message.Text = "Your request is submitted ! Administration will contact you soon !"
+        MessageBox1.MessageButton.Text = "Ok"
+    End Sub
 End Class

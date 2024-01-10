@@ -27,8 +27,8 @@ Partial Class MessageBox2
         Panel2 = New Panel()
         Panel3 = New Panel()
         Panel4 = New Panel()
-        Label1 = New Label()
-        Label2 = New Label()
+        MessageName = New Label()
+        Message = New Label()
         Button2 = New Button()
         Button1 = New Button()
         Panel4.SuspendLayout()
@@ -64,34 +64,34 @@ Partial Class MessageBox2
         ' Panel4
         ' 
         Panel4.BackColor = Color.FromArgb(CByte(128), CByte(123), CByte(132))
-        Panel4.Controls.Add(Label1)
+        Panel4.Controls.Add(MessageName)
         Panel4.Dock = DockStyle.Top
         Panel4.Location = New Point(11, 0)
         Panel4.Name = "Panel4"
         Panel4.Size = New Size(610, 73)
         Panel4.TabIndex = 3
         ' 
-        ' Label1
+        ' MessageName
         ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Neue Haas Unica ExtBd", 13.8749981F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label1.ForeColor = Color.White
-        Label1.Location = New Point(6, 9)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(145, 56)
-        Label1.TabIndex = 4
-        Label1.Text = "Label1"
+        MessageName.AutoSize = True
+        MessageName.Font = New Font("Neue Haas Unica ExtBd", 13.8749981F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        MessageName.ForeColor = Color.White
+        MessageName.Location = New Point(6, 9)
+        MessageName.Name = "MessageName"
+        MessageName.Size = New Size(145, 56)
+        MessageName.TabIndex = 4
+        MessageName.Text = "Label1"
         ' 
-        ' Label2
+        ' Message
         ' 
-        Label2.AutoSize = True
-        Label2.Font = New Font("Titillium Web", 10.874999F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label2.ForeColor = Color.FromArgb(CByte(56), CByte(58), CByte(54))
-        Label2.Location = New Point(49, 151)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(103, 44)
-        Label2.TabIndex = 4
-        Label2.Text = "Label2"
+        Message.AutoSize = True
+        Message.Font = New Font("Titillium Web", 10.874999F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Message.ForeColor = Color.FromArgb(CByte(56), CByte(58), CByte(54))
+        Message.Location = New Point(49, 151)
+        Message.Name = "Message"
+        Message.Size = New Size(103, 44)
+        Message.TabIndex = 4
+        Message.Text = "Label2"
         ' 
         ' Button2
         ' 
@@ -129,7 +129,7 @@ Partial Class MessageBox2
         ClientSize = New Size(632, 398)
         Controls.Add(Button1)
         Controls.Add(Button2)
-        Controls.Add(Label2)
+        Controls.Add(Message)
         Controls.Add(Panel4)
         Controls.Add(Panel3)
         Controls.Add(Panel2)
@@ -147,8 +147,8 @@ Partial Class MessageBox2
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Panel4 As Panel
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
+    Friend WithEvents MessageName As Label
+    Friend WithEvents Message As Label
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
 End Class

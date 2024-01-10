@@ -24,6 +24,7 @@ Partial Class Dashboard
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Dashboard))
         PanelRibbon = New Panel()
+        Label1 = New Label()
         labelcurrentForm = New Label()
         iconCurrentForm = New FontAwesome.Sharp.IconPictureBox()
         PanelMenu = New Panel()
@@ -35,12 +36,14 @@ Partial Class Dashboard
         PanelLogo = New Panel()
         imgHome = New PictureBox()
         PanelDesktop = New Panel()
-        Label1 = New Label()
+        PictureBox1 = New PictureBox()
         PanelRibbon.SuspendLayout()
         CType(iconCurrentForm, ComponentModel.ISupportInitialize).BeginInit()
         PanelMenu.SuspendLayout()
         PanelLogo.SuspendLayout()
         CType(imgHome, ComponentModel.ISupportInitialize).BeginInit()
+        PanelDesktop.SuspendLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' PanelRibbon
@@ -54,6 +57,17 @@ Partial Class Dashboard
         PanelRibbon.Name = "PanelRibbon"
         PanelRibbon.Size = New Size(1500, 80)
         PanelRibbon.TabIndex = 0
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Font = New Font("Titillium Web", 8.999999F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label1.ForeColor = Color.White
+        Label1.Location = New Point(1381, 23)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(95, 36)
+        Label1.TabIndex = 4
+        Label1.Text = "Student"
         ' 
         ' labelcurrentForm
         ' 
@@ -224,22 +238,22 @@ Partial Class Dashboard
         ' 
         ' PanelDesktop
         ' 
+        PanelDesktop.Controls.Add(PictureBox1)
         PanelDesktop.Dock = DockStyle.Fill
         PanelDesktop.Location = New Point(375, 80)
         PanelDesktop.Name = "PanelDesktop"
         PanelDesktop.Size = New Size(1125, 870)
         PanelDesktop.TabIndex = 2
         ' 
-        ' Label1
+        ' PictureBox1
         ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Titillium Web", 8.999999F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.ForeColor = Color.White
-        Label1.Location = New Point(1381, 23)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(95, 36)
-        Label1.TabIndex = 4
-        Label1.Text = "Student"
+        PictureBox1.Dock = DockStyle.Fill
+        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
+        PictureBox1.Location = New Point(0, 0)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(1125, 870)
+        PictureBox1.TabIndex = 0
+        PictureBox1.TabStop = False
         ' 
         ' Dashboard
         ' 
@@ -260,6 +274,8 @@ Partial Class Dashboard
         PanelMenu.ResumeLayout(False)
         PanelLogo.ResumeLayout(False)
         CType(imgHome, ComponentModel.ISupportInitialize).EndInit()
+        PanelDesktop.ResumeLayout(False)
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -276,4 +292,5 @@ Partial Class Dashboard
     Friend WithEvents labelcurrentForm As Label
     Friend WithEvents PanelDesktop As Panel
     Friend WithEvents Label1 As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

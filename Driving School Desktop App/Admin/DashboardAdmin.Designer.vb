@@ -37,11 +37,14 @@ Partial Class DashboardAdmin
         PanelLogo = New Panel()
         imgHome = New PictureBox()
         PanelDesktop = New Panel()
+        PictureBox1 = New PictureBox()
         PanelRibbon.SuspendLayout()
         CType(iconCurrentForm, ComponentModel.ISupportInitialize).BeginInit()
         PanelMenu.SuspendLayout()
         PanelLogo.SuspendLayout()
         CType(imgHome, ComponentModel.ISupportInitialize).BeginInit()
+        PanelDesktop.SuspendLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' PanelRibbon
@@ -259,11 +262,22 @@ Partial Class DashboardAdmin
         ' 
         ' PanelDesktop
         ' 
+        PanelDesktop.Controls.Add(PictureBox1)
         PanelDesktop.Dock = DockStyle.Fill
         PanelDesktop.Location = New Point(375, 80)
         PanelDesktop.Name = "PanelDesktop"
         PanelDesktop.Size = New Size(1125, 870)
         PanelDesktop.TabIndex = 2
+        ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.Dock = DockStyle.Fill
+        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
+        PictureBox1.Location = New Point(0, 0)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(1125, 870)
+        PictureBox1.TabIndex = 0
+        PictureBox1.TabStop = False
         ' 
         ' DashboardAdmin
         ' 
@@ -284,6 +298,8 @@ Partial Class DashboardAdmin
         PanelMenu.ResumeLayout(False)
         PanelLogo.ResumeLayout(False)
         CType(imgHome, ComponentModel.ISupportInitialize).EndInit()
+        PanelDesktop.ResumeLayout(False)
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -301,4 +317,5 @@ Partial Class DashboardAdmin
     Friend WithEvents PanelDesktop As Panel
     Friend WithEvents Label1 As Label
     Friend WithEvents BtnRequests As FontAwesome.Sharp.IconButton
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

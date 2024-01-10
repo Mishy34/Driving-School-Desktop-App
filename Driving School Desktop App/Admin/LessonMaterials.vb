@@ -7,11 +7,11 @@ Public Class LessonMaterials
 
         ' Check if the parent form reference is not null and if the panel exists
         If parentForm IsNot Nothing AndAlso parentForm.PanelDesktop IsNot Nothing Then
-            Introductory_Lessons.TopLevel = False
-            Introductory_Lessons.Dock = DockStyle.Fill
+            LessonMatIntroductory.TopLevel = False
+            LessonMatIntroductory.Dock = DockStyle.Fill
             parentForm.PanelDesktop.Controls.Clear()
-            parentForm.PanelDesktop.Controls.Add(Introductory_Lessons)
-            Introductory_Lessons.Show()
+            parentForm.PanelDesktop.Controls.Add(LessonMatIntroductory)
+            LessonMatIntroductory.Show()
         End If
 
     End Sub

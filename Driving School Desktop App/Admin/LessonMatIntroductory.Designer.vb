@@ -26,42 +26,54 @@ Partial Class LessonMatIntroductory
         Panel1 = New Panel()
         Panel9 = New Panel()
         Panel8 = New Panel()
+        PictureBox12 = New PictureBox()
+        Button7 = New Button()
         Button6 = New Button()
         PictureBox6 = New PictureBox()
         Panel7 = New Panel()
+        PictureBox11 = New PictureBox()
+        Button8 = New Button()
         Button5 = New Button()
         PictureBox5 = New PictureBox()
         Panel6 = New Panel()
+        PictureBox10 = New PictureBox()
+        Button9 = New Button()
         Button4 = New Button()
         PictureBox4 = New PictureBox()
         Panel5 = New Panel()
+        PictureBox9 = New PictureBox()
+        Button10 = New Button()
         Button3 = New Button()
         PictureBox3 = New PictureBox()
         Panel4 = New Panel()
+        PictureBox8 = New PictureBox()
+        Button11 = New Button()
         Button2 = New Button()
         PictureBox2 = New PictureBox()
         Panel3 = New Panel()
+        PictureBox7 = New PictureBox()
+        Button12 = New Button()
         Button1 = New Button()
         PictureBox1 = New PictureBox()
         Panel2 = New Panel()
-        Button7 = New Button()
-        Button8 = New Button()
-        Button9 = New Button()
-        Button10 = New Button()
-        Button11 = New Button()
-        Button12 = New Button()
         Panel1.SuspendLayout()
         Panel8.SuspendLayout()
+        CType(PictureBox12, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox6, ComponentModel.ISupportInitialize).BeginInit()
         Panel7.SuspendLayout()
+        CType(PictureBox11, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox5, ComponentModel.ISupportInitialize).BeginInit()
         Panel6.SuspendLayout()
+        CType(PictureBox10, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
         Panel5.SuspendLayout()
+        CType(PictureBox9, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         Panel4.SuspendLayout()
+        CType(PictureBox8, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         Panel3.SuspendLayout()
+        CType(PictureBox7, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -93,6 +105,7 @@ Partial Class LessonMatIntroductory
         ' Panel8
         ' 
         Panel8.BackColor = Color.FromArgb(CByte(246), CByte(238), CByte(233))
+        Panel8.Controls.Add(PictureBox12)
         Panel8.Controls.Add(Button7)
         Panel8.Controls.Add(Button6)
         Panel8.Controls.Add(PictureBox6)
@@ -100,6 +113,30 @@ Partial Class LessonMatIntroductory
         Panel8.Name = "Panel8"
         Panel8.Size = New Size(1018, 207)
         Panel8.TabIndex = 4
+        ' 
+        ' PictureBox12
+        ' 
+        PictureBox12.BackColor = Color.FromArgb(CByte(247), CByte(205), CByte(186))
+        PictureBox12.Image = CType(resources.GetObject("PictureBox12.Image"), Image)
+        PictureBox12.Location = New Point(44, 25)
+        PictureBox12.Name = "PictureBox12"
+        PictureBox12.Size = New Size(740, 153)
+        PictureBox12.TabIndex = 24
+        PictureBox12.TabStop = False
+        ' 
+        ' Button7
+        ' 
+        Button7.BackgroundImage = CType(resources.GetObject("Button7.BackgroundImage"), Image)
+        Button7.FlatAppearance.BorderSize = 0
+        Button7.FlatStyle = FlatStyle.Flat
+        Button7.Font = New Font("Titillium Web SemiBold", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button7.ForeColor = Color.White
+        Button7.Location = New Point(807, 57)
+        Button7.Name = "Button7"
+        Button7.Size = New Size(170, 40)
+        Button7.TabIndex = 16
+        Button7.Text = "Upload"
+        Button7.UseVisualStyleBackColor = True
         ' 
         ' Button6
         ' 
@@ -128,6 +165,7 @@ Partial Class LessonMatIntroductory
         ' Panel7
         ' 
         Panel7.BackColor = Color.FromArgb(CByte(246), CByte(238), CByte(233))
+        Panel7.Controls.Add(PictureBox11)
         Panel7.Controls.Add(Button8)
         Panel7.Controls.Add(Button5)
         Panel7.Controls.Add(PictureBox5)
@@ -135,6 +173,30 @@ Partial Class LessonMatIntroductory
         Panel7.Name = "Panel7"
         Panel7.Size = New Size(1018, 207)
         Panel7.TabIndex = 3
+        ' 
+        ' PictureBox11
+        ' 
+        PictureBox11.BackColor = Color.FromArgb(CByte(247), CByte(205), CByte(186))
+        PictureBox11.Image = CType(resources.GetObject("PictureBox11.Image"), Image)
+        PictureBox11.Location = New Point(44, 27)
+        PictureBox11.Name = "PictureBox11"
+        PictureBox11.Size = New Size(740, 153)
+        PictureBox11.TabIndex = 23
+        PictureBox11.TabStop = False
+        ' 
+        ' Button8
+        ' 
+        Button8.BackgroundImage = CType(resources.GetObject("Button8.BackgroundImage"), Image)
+        Button8.FlatAppearance.BorderSize = 0
+        Button8.FlatStyle = FlatStyle.Flat
+        Button8.Font = New Font("Titillium Web SemiBold", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button8.ForeColor = Color.White
+        Button8.Location = New Point(807, 47)
+        Button8.Name = "Button8"
+        Button8.Size = New Size(170, 40)
+        Button8.TabIndex = 17
+        Button8.Text = "Upload"
+        Button8.UseVisualStyleBackColor = True
         ' 
         ' Button5
         ' 
@@ -163,6 +225,7 @@ Partial Class LessonMatIntroductory
         ' Panel6
         ' 
         Panel6.BackColor = Color.FromArgb(CByte(246), CByte(238), CByte(233))
+        Panel6.Controls.Add(PictureBox10)
         Panel6.Controls.Add(Button9)
         Panel6.Controls.Add(Button4)
         Panel6.Controls.Add(PictureBox4)
@@ -170,6 +233,30 @@ Partial Class LessonMatIntroductory
         Panel6.Name = "Panel6"
         Panel6.Size = New Size(1018, 207)
         Panel6.TabIndex = 2
+        ' 
+        ' PictureBox10
+        ' 
+        PictureBox10.BackColor = Color.FromArgb(CByte(247), CByte(205), CByte(186))
+        PictureBox10.Image = CType(resources.GetObject("PictureBox10.Image"), Image)
+        PictureBox10.Location = New Point(44, 26)
+        PictureBox10.Name = "PictureBox10"
+        PictureBox10.Size = New Size(740, 153)
+        PictureBox10.TabIndex = 23
+        PictureBox10.TabStop = False
+        ' 
+        ' Button9
+        ' 
+        Button9.BackgroundImage = CType(resources.GetObject("Button9.BackgroundImage"), Image)
+        Button9.FlatAppearance.BorderSize = 0
+        Button9.FlatStyle = FlatStyle.Flat
+        Button9.Font = New Font("Titillium Web SemiBold", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button9.ForeColor = Color.White
+        Button9.Location = New Point(807, 53)
+        Button9.Name = "Button9"
+        Button9.Size = New Size(170, 40)
+        Button9.TabIndex = 18
+        Button9.Text = "Upload"
+        Button9.UseVisualStyleBackColor = True
         ' 
         ' Button4
         ' 
@@ -198,6 +285,7 @@ Partial Class LessonMatIntroductory
         ' Panel5
         ' 
         Panel5.BackColor = Color.FromArgb(CByte(246), CByte(238), CByte(233))
+        Panel5.Controls.Add(PictureBox9)
         Panel5.Controls.Add(Button10)
         Panel5.Controls.Add(Button3)
         Panel5.Controls.Add(PictureBox3)
@@ -205,6 +293,30 @@ Partial Class LessonMatIntroductory
         Panel5.Name = "Panel5"
         Panel5.Size = New Size(1018, 207)
         Panel5.TabIndex = 2
+        ' 
+        ' PictureBox9
+        ' 
+        PictureBox9.BackColor = Color.FromArgb(CByte(247), CByte(205), CByte(186))
+        PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), Image)
+        PictureBox9.Location = New Point(44, 22)
+        PictureBox9.Name = "PictureBox9"
+        PictureBox9.Size = New Size(740, 153)
+        PictureBox9.TabIndex = 24
+        PictureBox9.TabStop = False
+        ' 
+        ' Button10
+        ' 
+        Button10.BackgroundImage = CType(resources.GetObject("Button10.BackgroundImage"), Image)
+        Button10.FlatAppearance.BorderSize = 0
+        Button10.FlatStyle = FlatStyle.Flat
+        Button10.Font = New Font("Titillium Web SemiBold", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button10.ForeColor = Color.White
+        Button10.Location = New Point(802, 46)
+        Button10.Name = "Button10"
+        Button10.Size = New Size(170, 40)
+        Button10.TabIndex = 19
+        Button10.Text = "Upload"
+        Button10.UseVisualStyleBackColor = True
         ' 
         ' Button3
         ' 
@@ -233,6 +345,7 @@ Partial Class LessonMatIntroductory
         ' Panel4
         ' 
         Panel4.BackColor = Color.FromArgb(CByte(246), CByte(238), CByte(233))
+        Panel4.Controls.Add(PictureBox8)
         Panel4.Controls.Add(Button11)
         Panel4.Controls.Add(Button2)
         Panel4.Controls.Add(PictureBox2)
@@ -240,6 +353,30 @@ Partial Class LessonMatIntroductory
         Panel4.Name = "Panel4"
         Panel4.Size = New Size(1018, 207)
         Panel4.TabIndex = 2
+        ' 
+        ' PictureBox8
+        ' 
+        PictureBox8.BackColor = Color.FromArgb(CByte(247), CByte(205), CByte(186))
+        PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), Image)
+        PictureBox8.Location = New Point(44, 28)
+        PictureBox8.Name = "PictureBox8"
+        PictureBox8.Size = New Size(740, 153)
+        PictureBox8.TabIndex = 23
+        PictureBox8.TabStop = False
+        ' 
+        ' Button11
+        ' 
+        Button11.BackgroundImage = CType(resources.GetObject("Button11.BackgroundImage"), Image)
+        Button11.FlatAppearance.BorderSize = 0
+        Button11.FlatStyle = FlatStyle.Flat
+        Button11.Font = New Font("Titillium Web SemiBold", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button11.ForeColor = Color.White
+        Button11.Location = New Point(807, 47)
+        Button11.Name = "Button11"
+        Button11.Size = New Size(170, 40)
+        Button11.TabIndex = 20
+        Button11.Text = "Upload"
+        Button11.UseVisualStyleBackColor = True
         ' 
         ' Button2
         ' 
@@ -268,6 +405,7 @@ Partial Class LessonMatIntroductory
         ' Panel3
         ' 
         Panel3.BackColor = Color.FromArgb(CByte(246), CByte(238), CByte(233))
+        Panel3.Controls.Add(PictureBox7)
         Panel3.Controls.Add(Button12)
         Panel3.Controls.Add(Button1)
         Panel3.Controls.Add(PictureBox1)
@@ -275,6 +413,30 @@ Partial Class LessonMatIntroductory
         Panel3.Name = "Panel3"
         Panel3.Size = New Size(1018, 207)
         Panel3.TabIndex = 1
+        ' 
+        ' PictureBox7
+        ' 
+        PictureBox7.BackColor = Color.FromArgb(CByte(247), CByte(205), CByte(186))
+        PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), Image)
+        PictureBox7.Location = New Point(44, 29)
+        PictureBox7.Name = "PictureBox7"
+        PictureBox7.Size = New Size(740, 153)
+        PictureBox7.TabIndex = 22
+        PictureBox7.TabStop = False
+        ' 
+        ' Button12
+        ' 
+        Button12.BackgroundImage = CType(resources.GetObject("Button12.BackgroundImage"), Image)
+        Button12.FlatAppearance.BorderSize = 0
+        Button12.FlatStyle = FlatStyle.Flat
+        Button12.Font = New Font("Titillium Web SemiBold", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button12.ForeColor = Color.White
+        Button12.Location = New Point(807, 41)
+        Button12.Name = "Button12"
+        Button12.Size = New Size(170, 40)
+        Button12.TabIndex = 21
+        Button12.Text = "Uploaded"
+        Button12.UseVisualStyleBackColor = True
         ' 
         ' Button1
         ' 
@@ -308,90 +470,6 @@ Partial Class LessonMatIntroductory
         Panel2.Size = New Size(1091, 30)
         Panel2.TabIndex = 0
         ' 
-        ' Button7
-        ' 
-        Button7.BackgroundImage = CType(resources.GetObject("Button7.BackgroundImage"), Image)
-        Button7.FlatAppearance.BorderSize = 0
-        Button7.FlatStyle = FlatStyle.Flat
-        Button7.Font = New Font("Titillium Web SemiBold", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button7.ForeColor = Color.White
-        Button7.Location = New Point(807, 57)
-        Button7.Name = "Button7"
-        Button7.Size = New Size(170, 40)
-        Button7.TabIndex = 16
-        Button7.Text = "Upload"
-        Button7.UseVisualStyleBackColor = True
-        ' 
-        ' Button8
-        ' 
-        Button8.BackgroundImage = CType(resources.GetObject("Button8.BackgroundImage"), Image)
-        Button8.FlatAppearance.BorderSize = 0
-        Button8.FlatStyle = FlatStyle.Flat
-        Button8.Font = New Font("Titillium Web SemiBold", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button8.ForeColor = Color.White
-        Button8.Location = New Point(807, 47)
-        Button8.Name = "Button8"
-        Button8.Size = New Size(170, 40)
-        Button8.TabIndex = 17
-        Button8.Text = "Upload"
-        Button8.UseVisualStyleBackColor = True
-        ' 
-        ' Button9
-        ' 
-        Button9.BackgroundImage = CType(resources.GetObject("Button9.BackgroundImage"), Image)
-        Button9.FlatAppearance.BorderSize = 0
-        Button9.FlatStyle = FlatStyle.Flat
-        Button9.Font = New Font("Titillium Web SemiBold", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button9.ForeColor = Color.White
-        Button9.Location = New Point(807, 53)
-        Button9.Name = "Button9"
-        Button9.Size = New Size(170, 40)
-        Button9.TabIndex = 18
-        Button9.Text = "Upload"
-        Button9.UseVisualStyleBackColor = True
-        ' 
-        ' Button10
-        ' 
-        Button10.BackgroundImage = CType(resources.GetObject("Button10.BackgroundImage"), Image)
-        Button10.FlatAppearance.BorderSize = 0
-        Button10.FlatStyle = FlatStyle.Flat
-        Button10.Font = New Font("Titillium Web SemiBold", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button10.ForeColor = Color.White
-        Button10.Location = New Point(802, 46)
-        Button10.Name = "Button10"
-        Button10.Size = New Size(170, 40)
-        Button10.TabIndex = 19
-        Button10.Text = "Upload"
-        Button10.UseVisualStyleBackColor = True
-        ' 
-        ' Button11
-        ' 
-        Button11.BackgroundImage = CType(resources.GetObject("Button11.BackgroundImage"), Image)
-        Button11.FlatAppearance.BorderSize = 0
-        Button11.FlatStyle = FlatStyle.Flat
-        Button11.Font = New Font("Titillium Web SemiBold", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button11.ForeColor = Color.White
-        Button11.Location = New Point(807, 47)
-        Button11.Name = "Button11"
-        Button11.Size = New Size(170, 40)
-        Button11.TabIndex = 20
-        Button11.Text = "Upload"
-        Button11.UseVisualStyleBackColor = True
-        ' 
-        ' Button12
-        ' 
-        Button12.BackgroundImage = CType(resources.GetObject("Button12.BackgroundImage"), Image)
-        Button12.FlatAppearance.BorderSize = 0
-        Button12.FlatStyle = FlatStyle.Flat
-        Button12.Font = New Font("Titillium Web SemiBold", 8.999999F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Button12.ForeColor = Color.White
-        Button12.Location = New Point(807, 41)
-        Button12.Name = "Button12"
-        Button12.Size = New Size(170, 40)
-        Button12.TabIndex = 21
-        Button12.Text = "Upload"
-        Button12.UseVisualStyleBackColor = True
-        ' 
         ' LessonMatIntroductory
         ' 
         AutoScaleDimensions = New SizeF(13F, 32F)
@@ -406,16 +484,22 @@ Partial Class LessonMatIntroductory
         Text = "Introductory_Lessons"
         Panel1.ResumeLayout(False)
         Panel8.ResumeLayout(False)
+        CType(PictureBox12, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox6, ComponentModel.ISupportInitialize).EndInit()
         Panel7.ResumeLayout(False)
+        CType(PictureBox11, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox5, ComponentModel.ISupportInitialize).EndInit()
         Panel6.ResumeLayout(False)
+        CType(PictureBox10, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox4, ComponentModel.ISupportInitialize).EndInit()
         Panel5.ResumeLayout(False)
+        CType(PictureBox9, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
         Panel4.ResumeLayout(False)
+        CType(PictureBox8, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         Panel3.ResumeLayout(False)
+        CType(PictureBox7, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
@@ -447,4 +531,10 @@ Partial Class LessonMatIntroductory
     Friend WithEvents Button10 As Button
     Friend WithEvents Button11 As Button
     Friend WithEvents Button12 As Button
+    Friend WithEvents PictureBox7 As PictureBox
+    Friend WithEvents PictureBox9 As PictureBox
+    Friend WithEvents PictureBox8 As PictureBox
+    Friend WithEvents PictureBox12 As PictureBox
+    Friend WithEvents PictureBox11 As PictureBox
+    Friend WithEvents PictureBox10 As PictureBox
 End Class

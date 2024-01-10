@@ -84,7 +84,7 @@ Partial Class Lessons
         btnIntroductory.Dock = DockStyle.Bottom
         btnIntroductory.FlatAppearance.BorderSize = 0
         btnIntroductory.FlatStyle = FlatStyle.Flat
-        btnIntroductory.Font = New Font("Neue Haas Unica Med", 11.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnIntroductory.Font = New Font("Neue Haas Unica Med", 11F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnIntroductory.ForeColor = Color.White
         btnIntroductory.IconChar = FontAwesome.Sharp.IconChar.None
         btnIntroductory.IconColor = Color.Black
@@ -170,7 +170,7 @@ Partial Class Lessons
         btnStandard.Dock = DockStyle.Bottom
         btnStandard.FlatAppearance.BorderSize = 0
         btnStandard.FlatStyle = FlatStyle.Flat
-        btnStandard.Font = New Font("Neue Haas Unica Med", 11.0F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        btnStandard.Font = New Font("Neue Haas Unica Med", 11F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         btnStandard.ForeColor = Color.White
         btnStandard.IconChar = FontAwesome.Sharp.IconChar.None
         btnStandard.IconColor = Color.Black
@@ -335,7 +335,7 @@ Partial Class Lessons
         ' subHeading
         ' 
         subHeading.AutoSize = True
-        subHeading.Font = New Font("Titillium Web", 11.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        subHeading.Font = New Font("Titillium Web", 11F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         subHeading.ForeColor = Color.Black
         subHeading.Location = New Point(46, 109)
         subHeading.Name = "subHeading"
@@ -346,7 +346,7 @@ Partial Class Lessons
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Titillium Web", 9.0F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label2.Font = New Font("Titillium Web", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label2.Location = New Point(318, 174)
         Label2.Name = "Label2"
         Label2.Size = New Size(489, 36)
@@ -395,7 +395,7 @@ Partial Class Lessons
         ' 
         ' Lessons
         ' 
-        AutoScaleDimensions = New SizeF(13.0F, 32.0F)
+        AutoScaleDimensions = New SizeF(13F, 32F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.FromArgb(CByte(246), CByte(238), CByte(233))
         ClientSize = New Size(1125, 870)
