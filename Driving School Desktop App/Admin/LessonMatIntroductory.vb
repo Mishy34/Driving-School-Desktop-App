@@ -48,4 +48,39 @@
         MessageBox1.Message.Text = "Successfully Deleted !"
         MessageBox1.MessageButton.Text = "Ok"
     End Sub
+
+    Private Sub Button11_Click(sender As Object, e As EventArgs) Handles Button11.Click
+        UploadFile.Show()
+        UploadFile.LabelHeading.Text = "Lesson File Upload"
+        UploadFile.Label1.Text = "File Name"
+        UploadFile.Label2.Text = "File"
+    End Sub
+
+    Private Sub Button10_Click(sender As Object, e As EventArgs) Handles Button10.Click
+        UploadFile.Show()
+        UploadFile.LabelHeading.Text = "Lesson File Upload"
+        UploadFile.Label1.Text = "File Name"
+        UploadFile.Label2.Text = "File"
+    End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        UploadFile.Show()
+        UploadFile.LabelHeading.Text = "Lesson File Upload"
+        UploadFile.Label1.Text = "File Name"
+        UploadFile.Label2.Text = "File"
+    End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        UploadFile.Show()
+        UploadFile.LabelHeading.Text = "Lesson File Upload"
+        UploadFile.Label1.Text = "File Name"
+        UploadFile.Label2.Text = "File"
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        UploadFile.Show()
+        UploadFile.LabelHeading.Text = "Lesson File Upload"
+        UploadFile.Label1.Text = "File Name"
+        UploadFile.Label2.Text = "File"
+    End Sub
 End Class

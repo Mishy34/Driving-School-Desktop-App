@@ -35,7 +35,7 @@ Public Class Lessons
     Private Sub btnDrivingTest_Click(sender As Object, e As EventArgs) Handles btnDrivingTest.Click
         MessageBox1.Show()
         MessageBox1.MessageName.Text = "Driving Test Request"
-        MessageBox1.Message.Text = "Your request is submitted ! Administration will contact you soon !"
+        MessageBox1.Message.Text = "Your request is submitted! Admin will contact you!"
         MessageBox1.MessageButton.Text = "Ok"
     End Sub
 End Class

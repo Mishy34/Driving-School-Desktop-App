@@ -118,18 +118,18 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="IconButton1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="Button1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAATgAAAB3CAYAAACXBlxnAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAADt0RVh0Q29tbWVudAB4cjpkOkRBRjVVWFVHd09JOjIsajo0Njc2Mjc3MTc3NDAy
-        MTI4NTA1LHQ6MjQwMTA4MTdO06lzAAABkUlEQVR4Xu3UMREAIAwAMbaKxT9r8fGXIRZy3p0FKBIckCU4
-        IEtwQJbggCzBAVmCA7IEB2QJDsgSHJAlOCBLcECW4IAswQFZggOyBAdkCQ7IEhyQJTggS3BAluCALMEB
-        WYIDsgQHZAkOyBIckCU4IEtwQJbggCzBAVmCA7IEB2QJDsgSHJAlOCBLcECW4IAswQFZggOyBAdkCQ7I
-        EhyQJTggS3BAluCALMEBWYIDsgQHZAkOyBIckCU4IEtwQJbggCzBAVmCA7IEB2QJDsgSHJAlOCBLcECW
-        4IAswQFZggOyBAdkCQ7IEhyQJTggS3BAluCALMEBWYIDsgQHZAkOyBIckCU4IEtwQJbggCzBAVmCA7IE
-        B2QJDsgSHJAlOCBLcECW4IAswQFZggOyBAdkCQ7IEhyQJTggS3BAluCALMEBWYIDsgQHZAkOyBIckCU4
-        IEtwQJbggCzBAVmCA7IEB2QJDsgSHJAlOCBLcECW4IAswQFZggOyBAdkCQ7IEhyQJTggS3BAluCALMEB
-        WYIDomY/bJx+nbGl+JQAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAATgAAAB3CAYAAACXBlxnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA7dEVYdENvbW1lbnQAeHI6ZDpEQUY1VVhVR3dPSToyLGo6
+        NDY3NjI3NzE3NzQwMjEyODUwNSx0OjI0MDEwODE3TtOpcwAAAZFJREFUeF7t1DERACAMADG2isU/a/Hx
+        lyEWct6dBSgSHJAlOCBLcECW4IAswQFZggOyBAdkCQ7IEhyQJTggS3BAluCALMEBWYIDsgQHZAkOyBIc
+        kCU4IEtwQJbggCzBAVmCA7IEB2QJDsgSHJAlOCBLcECW4IAswQFZggOyBAdkCQ7IEhyQJTggS3BAluCA
+        LMEBWYIDsgQHZAkOyBIckCU4IEtwQJbggCzBAVmCA7IEB2QJDsgSHJAlOCBLcECW4IAswQFZggOyBAdk
+        CQ7IEhyQJTggS3BAluCALMEBWYIDsgQHZAkOyBIckCU4IEtwQJbggCzBAVmCA7IEB2QJDsgSHJAlOCBL
+        cECW4IAswQFZggOyBAdkCQ7IEhyQJTggS3BAluCALMEBWYIDsgQHZAkOyBIckCU4IEtwQJbggCzBAVmC
+        A7IEB2QJDsgSHJAlOCBLcECW4IAswQFZggOyBAdkCQ7IEhyQJTggS3BAluCALMEBWYIDsgQHZAkOyBIc
+        kCU4IEtwQJbggCzBAVmCA6JmP2ycfp2xpfiUAAAAAElFTkSuQmCC
 </value>
   </data>
 </root>

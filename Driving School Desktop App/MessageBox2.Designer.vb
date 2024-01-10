@@ -136,6 +136,7 @@ Partial Class MessageBox2
         Controls.Add(Panel1)
         FormBorderStyle = FormBorderStyle.None
         Name = "MessageBox2"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "MessageBox2"
         Panel4.ResumeLayout(False)
         Panel4.PerformLayout()

@@ -28,6 +28,7 @@
     <Compile Update="Admin\DashboardAdmin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Admin\StudentReq.vb" />
     <Compile Update="Admin\LessonMatIntroductory.vb" />
     <Compile Update="Admin\LessonMaterials.vb" />
     <Compile Update="Admin\MngSchedule.vb" />

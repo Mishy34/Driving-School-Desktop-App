@@ -35,7 +35,7 @@
         MessageBox2.MessageName.Text = "Lesson Locked"
         MessageBox2.Message.Text = "This lesson is locked ! Click Book to unlock !"
         MessageBox2.Button1.Text = "Cancel"
-        MessageBox2.Button1.Text = "Book"
+        MessageBox2.Button2.Text = "Book"
     End Sub
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
@@ -43,7 +43,7 @@
         MessageBox2.MessageName.Text = "Lesson Locked"
         MessageBox2.Message.Text = "This lesson is locked ! Click Book to unlock !"
         MessageBox2.Button1.Text = "Cancel"
-        MessageBox2.Button1.Text = "Book"
+        MessageBox2.Button2.Text = "Book"
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
@@ -51,6 +51,6 @@
         MessageBox2.MessageName.Text = "Lesson Locked"
         MessageBox2.Message.Text = "This lesson is locked ! Click Book to unlock !"
         MessageBox2.Button1.Text = "Cancel"
-        MessageBox2.Button1.Text = "Book"
+        MessageBox2.Button2.Text = "Book"
     End Sub
 End Class

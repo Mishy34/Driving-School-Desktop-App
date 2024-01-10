@@ -6,11 +6,11 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        If Button1.Text = "Book" Then
+        If Button2.Text = "Book" Then
             Me.Hide()
             MessageBox1.Show()
             MessageBox1.MessageName.Text = "Booking Request"
-            MessageBox1.Message.Text = "Your request is submitted ! Administration will contact you soon !"
+            MessageBox1.Message.Text = "Your request is submitted! Admin will contact you!"
             MessageBox1.MessageButton.Text = "Ok"
         End If
     End Sub
