@@ -314,7 +314,7 @@ Partial Class MngSchedule
         Controls.Add(Heading)
         FormBorderStyle = FormBorderStyle.None
         Name = "MngSchedule"
-        Text = "StudentDetails"
+        Text = "Schedules"
         Panel1.ResumeLayout(False)
         TableLayoutPanel1.ResumeLayout(False)
         TableLayoutPanel1.PerformLayout()

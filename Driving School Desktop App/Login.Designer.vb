@@ -26,16 +26,14 @@ Partial Class Login
         Label1 = New Label()
         PictureBox1 = New PictureBox()
         PictureBox2 = New PictureBox()
-        Label2 = New Label()
         TxtEmail = New TextBox()
         TxtPassword = New TextBox()
         IconButton1 = New FontAwesome.Sharp.IconButton()
         IconButton2 = New FontAwesome.Sharp.IconButton()
         IconButton3 = New FontAwesome.Sharp.IconButton()
+        btnPwUnhide = New FontAwesome.Sharp.IconPictureBox()
         Label3 = New Label()
         Label4 = New Label()
-        Label5 = New Label()
-        btnPwUnhide = New FontAwesome.Sharp.IconPictureBox()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         CType(btnPwUnhide, ComponentModel.ISupportInitialize).BeginInit()
@@ -47,7 +45,7 @@ Partial Class Login
         Label1.BackColor = Color.Transparent
         Label1.Font = New Font("Titillium Web", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.White
-        Label1.Location = New Point(945, 222)
+        Label1.Location = New Point(945, 257)
         Label1.Name = "Label1"
         Label1.Size = New Size(418, 48)
         Label1.TabIndex = 0
@@ -70,18 +68,6 @@ Partial Class Login
         PictureBox2.Size = New Size(418, 65)
         PictureBox2.TabIndex = 2
         PictureBox2.TabStop = False
-        ' 
-        ' Label2
-        ' 
-        Label2.AutoSize = True
-        Label2.BackColor = Color.Transparent
-        Label2.Font = New Font("Titillium Web", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label2.ForeColor = Color.White
-        Label2.Location = New Point(1009, 283)
-        Label2.Name = "Label2"
-        Label2.Size = New Size(180, 36)
-        Label2.TabIndex = 3
-        Label2.Text = "New to Pass IT? "
         ' 
         ' TxtEmail
         ' 
@@ -156,6 +142,20 @@ Partial Class Login
         IconButton3.TextAlign = ContentAlignment.TopCenter
         IconButton3.UseVisualStyleBackColor = True
         ' 
+        ' btnPwUnhide
+        ' 
+        btnPwUnhide.BackColor = Color.FromArgb(CByte(247), CByte(129), CByte(44))
+        btnPwUnhide.ForeColor = Color.FromArgb(CByte(128), CByte(123), CByte(132))
+        btnPwUnhide.IconChar = FontAwesome.Sharp.IconChar.EyeSlash
+        btnPwUnhide.IconColor = Color.FromArgb(CByte(128), CByte(123), CByte(132))
+        btnPwUnhide.IconFont = FontAwesome.Sharp.IconFont.Auto
+        btnPwUnhide.IconSize = 50
+        btnPwUnhide.Location = New Point(1293, 495)
+        btnPwUnhide.Name = "btnPwUnhide"
+        btnPwUnhide.Size = New Size(50, 50)
+        btnPwUnhide.TabIndex = 12
+        btnPwUnhide.TabStop = False
+        ' 
         ' Label3
         ' 
         Label3.AutoSize = True
@@ -180,32 +180,6 @@ Partial Class Login
         Label4.TabIndex = 10
         Label4.Text = "Reset"
         ' 
-        ' Label5
-        ' 
-        Label5.AutoSize = True
-        Label5.BackColor = Color.Transparent
-        Label5.Font = New Font("Titillium Web", 9F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label5.ForeColor = Color.White
-        Label5.Location = New Point(1176, 283)
-        Label5.Name = "Label5"
-        Label5.Size = New Size(102, 36)
-        Label5.TabIndex = 11
-        Label5.Text = "Register"
-        ' 
-        ' btnPwUnhide
-        ' 
-        btnPwUnhide.BackColor = Color.FromArgb(CByte(247), CByte(129), CByte(44))
-        btnPwUnhide.ForeColor = Color.FromArgb(CByte(128), CByte(123), CByte(132))
-        btnPwUnhide.IconChar = FontAwesome.Sharp.IconChar.EyeSlash
-        btnPwUnhide.IconColor = Color.FromArgb(CByte(128), CByte(123), CByte(132))
-        btnPwUnhide.IconFont = FontAwesome.Sharp.IconFont.Auto
-        btnPwUnhide.IconSize = 50
-        btnPwUnhide.Location = New Point(1293, 495)
-        btnPwUnhide.Name = "btnPwUnhide"
-        btnPwUnhide.Size = New Size(50, 50)
-        btnPwUnhide.TabIndex = 12
-        btnPwUnhide.TabStop = False
-        ' 
         ' Login
         ' 
         AutoScaleDimensions = New SizeF(13F, 32F)
@@ -214,7 +188,6 @@ Partial Class Login
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         ClientSize = New Size(1500, 950)
         Controls.Add(btnPwUnhide)
-        Controls.Add(Label5)
         Controls.Add(Label4)
         Controls.Add(Label3)
         Controls.Add(IconButton3)
@@ -222,7 +195,6 @@ Partial Class Login
         Controls.Add(IconButton1)
         Controls.Add(TxtPassword)
         Controls.Add(TxtEmail)
-        Controls.Add(Label2)
         Controls.Add(PictureBox2)
         Controls.Add(PictureBox1)
         Controls.Add(Label1)
@@ -242,15 +214,13 @@ Partial Class Login
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents Label2 As Label
     Friend WithEvents TxtEmail As TextBox
     Friend WithEvents TxtPassword As TextBox
     Friend WithEvents IconButton1 As FontAwesome.Sharp.IconButton
     Friend WithEvents IconButton2 As FontAwesome.Sharp.IconButton
     Friend WithEvents IconButton3 As FontAwesome.Sharp.IconButton
+    Friend WithEvents btnPwUnhide As FontAwesome.Sharp.IconPictureBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents btnPwUnhide As FontAwesome.Sharp.IconPictureBox
 
 End Class

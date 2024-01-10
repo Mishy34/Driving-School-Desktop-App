@@ -198,7 +198,7 @@ Partial Class Requests
         Controls.Add(Heading)
         FormBorderStyle = FormBorderStyle.None
         Name = "Requests"
-        Text = "StudentDetails"
+        Text = "Requests"
         Panel1.ResumeLayout(False)
         TableLayoutPanel1.ResumeLayout(False)
         TableLayoutPanel1.PerformLayout()

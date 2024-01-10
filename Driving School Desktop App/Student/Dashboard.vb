@@ -111,5 +111,12 @@ Public Class Dashboard
         Reset()
     End Sub
 
-
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+        Me.Hide()
+        MessageBox1.Show()
+        MessageBox1.MessageName.Text = "Logout"
+        MessageBox1.Message.Text = "Successfully Logged Out !"
+        MessageBox1.MessageButton.Text = "Ok"
+        Login.Show()
+    End Sub
 End Class

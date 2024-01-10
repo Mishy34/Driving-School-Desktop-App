@@ -11,6 +11,10 @@
         FormEdit.Label2.Text = "Instructor"
         FormEdit.Label3.Text = "Date and Time"
         FormEdit.Label4.Text = "Lesson Name"
+        FormEdit.TextBox1.Clear()
+        FormEdit.TextBox2.Clear()
+        FormEdit.TextBox3.Clear()
+        FormEdit.TextBox4.Clear()
 
     End Sub
 

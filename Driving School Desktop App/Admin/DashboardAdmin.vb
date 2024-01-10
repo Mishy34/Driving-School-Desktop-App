@@ -117,4 +117,13 @@ Public Class DashboardAdmin
         ActivateButton(sender, Color.FromArgb(246, 107, 7))
         OpenChildForm(New Requests)
     End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+        Me.Hide()
+        MessageBox1.Show()
+        MessageBox1.MessageName.Text = "Logout"
+        MessageBox1.Message.Text = "Successfully Logged Out !"
+        MessageBox1.MessageButton.Text = "Ok"
+        Login.Show()
+    End Sub
 End Class

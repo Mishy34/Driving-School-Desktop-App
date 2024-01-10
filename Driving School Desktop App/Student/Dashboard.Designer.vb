@@ -24,6 +24,7 @@ Partial Class Dashboard
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Dashboard))
         PanelRibbon = New Panel()
+        Label2 = New Label()
         Label1 = New Label()
         labelcurrentForm = New Label()
         iconCurrentForm = New FontAwesome.Sharp.IconPictureBox()
@@ -49,6 +50,7 @@ Partial Class Dashboard
         ' PanelRibbon
         ' 
         PanelRibbon.BackColor = Color.FromArgb(CByte(246), CByte(107), CByte(7))
+        PanelRibbon.Controls.Add(Label2)
         PanelRibbon.Controls.Add(Label1)
         PanelRibbon.Controls.Add(labelcurrentForm)
         PanelRibbon.Controls.Add(iconCurrentForm)
@@ -58,12 +60,23 @@ Partial Class Dashboard
         PanelRibbon.Size = New Size(1500, 80)
         PanelRibbon.TabIndex = 0
         ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Font = New Font("Titillium Web", 8.999999F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        Label2.ForeColor = Color.White
+        Label2.Location = New Point(1201, 23)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(85, 36)
+        Label2.TabIndex = 5
+        Label2.Text = "Logout"
+        ' 
         ' Label1
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Titillium Web", 8.999999F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.White
-        Label1.Location = New Point(1381, 23)
+        Label1.Location = New Point(1311, 23)
         Label1.Name = "Label1"
         Label1.Size = New Size(95, 36)
         Label1.TabIndex = 4
@@ -293,4 +306,5 @@ Partial Class Dashboard
     Friend WithEvents PanelDesktop As Panel
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Label2 As Label
 End Class

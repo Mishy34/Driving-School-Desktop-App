@@ -314,7 +314,7 @@ Partial Class InsDetails
         Controls.Add(Heading)
         FormBorderStyle = FormBorderStyle.None
         Name = "InsDetails"
-        Text = "StudentDetails"
+        Text = "Instructor"
         Panel1.ResumeLayout(False)
         TableLayoutPanel1.ResumeLayout(False)
         TableLayoutPanel1.PerformLayout()

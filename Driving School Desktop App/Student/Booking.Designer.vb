@@ -161,7 +161,7 @@ Partial Class Booking
         Controls.Add(Heading)
         FormBorderStyle = FormBorderStyle.None
         Name = "Booking"
-        Text = "Instructor"
+        Text = "Bookings"
         Panel1.ResumeLayout(False)
         Panel2.ResumeLayout(False)
         Panel3.ResumeLayout(False)

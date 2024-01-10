@@ -359,7 +359,7 @@ Partial Class Schedule
         Controls.Add(Heading)
         FormBorderStyle = FormBorderStyle.None
         Name = "Schedule"
-        Text = "Schedule"
+        Text = "Schedules"
         Panel1.ResumeLayout(False)
         TableLayoutPanel1.ResumeLayout(False)
         TableLayoutPanel1.PerformLayout()

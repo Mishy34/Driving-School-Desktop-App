@@ -11,6 +11,10 @@
             FormEdit.Label2.Text = "Contact No:"
             FormEdit.Label3.Text = "No of Students"
         FormEdit.Label4.Text = "Payment Status"
+        FormEdit.TextBox1.Clear()
+        FormEdit.TextBox2.Clear()
+        FormEdit.TextBox3.Clear()
+        FormEdit.TextBox4.Clear()
 
     End Sub
 
@@ -23,10 +27,10 @@
             FormEdit.Label2.Text = "Contact No:"
             FormEdit.Label3.Text = "No of Students"
             FormEdit.Label4.Text = "Payment Status"
-            FormEdit.TextBox1.Text = "Instructor 1"
-            FormEdit.TextBox2.Text = "+44 7667567654"
-            FormEdit.TextBox3.Text = "20"
-            FormEdit.TextBox4.Text = "Completed"
+        FormEdit.TextBox1.Text = "Instructor 1"
+        FormEdit.TextBox2.Text = "+44 7667567654"
+        FormEdit.TextBox3.Text = "20"
+        FormEdit.TextBox4.Text = "Completed"
 
 
 
@@ -44,7 +48,8 @@
             FormEdit.TextBox1.Text = "Instructor 2"
             FormEdit.TextBox2.Text = "+44 7667567654"
             FormEdit.TextBox3.Text = "10"
-            FormEdit.TextBox4.Text = "Completed"
+        FormEdit.TextBox4.Text = "Completed"
+
 
     End Sub
 

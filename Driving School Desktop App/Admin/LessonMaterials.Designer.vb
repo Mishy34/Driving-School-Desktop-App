@@ -396,7 +396,7 @@ Partial Class LessonMaterials
         Controls.Add(Panel1)
         FormBorderStyle = FormBorderStyle.None
         Name = "LessonMaterials"
-        Text = "Form3"
+        Text = "Lessons"
         Panel1.ResumeLayout(False)
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         Panel7.ResumeLayout(False)
