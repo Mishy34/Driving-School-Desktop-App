@@ -22,6 +22,7 @@ Partial Class FormEdit
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        components = New ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FormEdit))
         LabelHeading = New Label()
         Label1 = New Label()
@@ -33,6 +34,8 @@ Partial Class FormEdit
         TextBox3 = New TextBox()
         TextBox4 = New TextBox()
         IconButton1 = New FontAwesome.Sharp.IconButton()
+        ErrorProvider1 = New ErrorProvider(components)
+        CType(ErrorProvider1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' LabelHeading
@@ -133,6 +136,10 @@ Partial Class FormEdit
         IconButton1.Text = "Submit"
         IconButton1.UseVisualStyleBackColor = True
         ' 
+        ' ErrorProvider1
+        ' 
+        ErrorProvider1.ContainerControl = Me
+        ' 
         ' FormEdit
         ' 
         AutoScaleDimensions = New SizeF(13F, 32F)
@@ -153,6 +160,7 @@ Partial Class FormEdit
         Name = "FormEdit"
         StartPosition = FormStartPosition.CenterScreen
         Text = "InstructorForm"
+        CType(ErrorProvider1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -167,4 +175,5 @@ Partial Class FormEdit
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents IconButton1 As FontAwesome.Sharp.IconButton
+    Friend WithEvents ErrorProvider1 As ErrorProvider
 End Class

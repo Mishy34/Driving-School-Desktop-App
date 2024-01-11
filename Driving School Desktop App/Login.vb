@@ -24,6 +24,7 @@
             MessageBox1.MessageName.Text = "Incorrect credentials"
             MessageBox1.Message.Text = "Your username or password is incorrect !"
             MessageBox1.MessageButton.Text = "Retry"
+            MessageBox1.BringToFront()
         End If
 
 
