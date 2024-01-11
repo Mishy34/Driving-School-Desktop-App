@@ -5,7 +5,7 @@
     Private Sub IconButton3_Click(sender As Object, e As EventArgs) Handles IconButton3.Click
         If TxtEmail.Text = "student@gmail.com" And TxtPassword.Text = "Newpw1@123" Then
             MessageBox1.Show()
-            MessageBox1.MessageName.Text = "Successfull Login"
+            MessageBox1.MessageName.Text = "Successful Login"
             MessageBox1.Message.Text = "You are successfully logged in !"
             MessageBox1.MessageButton.Text = "Ok"
             MessageBox1.DashboardType = "Student"
@@ -13,7 +13,7 @@
 
         ElseIf TxtEmail.Text = "admin@gmail.com" And TxtPassword.Text = "Newpw2@123" Then
             MessageBox1.Show()
-            MessageBox1.MessageName.Text = "Successfull Login"
+            MessageBox1.MessageName.Text = "Successful Login"
             MessageBox1.Message.Text = "You are successfully logged in !"
             MessageBox1.MessageButton.Text = "Ok"
             MessageBox1.DashboardType = "Admin"
