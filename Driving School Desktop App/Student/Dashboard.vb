@@ -118,5 +118,16 @@ Public Class Dashboard
         MessageBox1.Message.Text = "Successfully Logged Out !"
         MessageBox1.MessageButton.Text = "Ok"
         Login.Show()
+        Login.TxtEmail.Clear()
+        Login.TxtPassword.Clear()
+
+    End Sub
+
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+        MessageBox2.Show()
+        MessageBox2.MessageName.Text = "Close application"
+        MessageBox2.Message.Text = "Do you want to exit ?"
+        MessageBox2.Button1.Text = "Cancel"
+        MessageBox2.Button2.Text = "Yes"
     End Sub
 End Class

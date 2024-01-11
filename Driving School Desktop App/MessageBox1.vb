@@ -3,7 +3,7 @@
     Public Property DashboardType As String
 
     Private Sub MessageButton_Click(sender As Object, e As EventArgs) Handles MessageButton.Click
-        If MessageName.Text = "Successfull Login" Then
+        If MessageName.Text = "Successful Login" Then
             Me.Hide()
             If DashboardType = "Admin" Then
                 DashboardAdmin.Show()

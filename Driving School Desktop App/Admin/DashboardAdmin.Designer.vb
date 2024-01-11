@@ -39,6 +39,7 @@ Partial Class DashboardAdmin
         imgHome = New PictureBox()
         PanelDesktop = New Panel()
         PictureBox1 = New PictureBox()
+        PictureBox2 = New PictureBox()
         PanelRibbon.SuspendLayout()
         CType(iconCurrentForm, ComponentModel.ISupportInitialize).BeginInit()
         PanelMenu.SuspendLayout()
@@ -46,11 +47,13 @@ Partial Class DashboardAdmin
         CType(imgHome, ComponentModel.ISupportInitialize).BeginInit()
         PanelDesktop.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' PanelRibbon
         ' 
         PanelRibbon.BackColor = Color.FromArgb(CByte(246), CByte(107), CByte(7))
+        PanelRibbon.Controls.Add(PictureBox2)
         PanelRibbon.Controls.Add(Label2)
         PanelRibbon.Controls.Add(Label1)
         PanelRibbon.Controls.Add(labelcurrentForm)
@@ -66,7 +69,7 @@ Partial Class DashboardAdmin
         Label2.AutoSize = True
         Label2.Font = New Font("Titillium Web", 8.999999F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.White
-        Label2.Location = New Point(1336, 23)
+        Label2.Location = New Point(1315, 24)
         Label2.Name = "Label2"
         Label2.Size = New Size(80, 36)
         Label2.TabIndex = 5
@@ -77,7 +80,7 @@ Partial Class DashboardAdmin
         Label1.AutoSize = True
         Label1.Font = New Font("Titillium Web", 8.999999F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.White
-        Label1.Location = New Point(1230, 23)
+        Label1.Location = New Point(1218, 24)
         Label1.Name = "Label1"
         Label1.Size = New Size(85, 36)
         Label1.TabIndex = 4
@@ -292,6 +295,16 @@ Partial Class DashboardAdmin
         PictureBox1.TabIndex = 0
         PictureBox1.TabStop = False
         ' 
+        ' PictureBox2
+        ' 
+        PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
+        PictureBox2.Location = New Point(1421, 16)
+        PictureBox2.Name = "PictureBox2"
+        PictureBox2.Size = New Size(49, 43)
+        PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox2.TabIndex = 6
+        PictureBox2.TabStop = False
+        ' 
         ' DashboardAdmin
         ' 
         AutoScaleDimensions = New SizeF(13F, 32F)
@@ -313,6 +326,7 @@ Partial Class DashboardAdmin
         CType(imgHome, ComponentModel.ISupportInitialize).EndInit()
         PanelDesktop.ResumeLayout(False)
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -332,4 +346,5 @@ Partial Class DashboardAdmin
     Friend WithEvents BtnRequests As FontAwesome.Sharp.IconButton
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label2 As Label
+    Friend WithEvents PictureBox2 As PictureBox
 End Class

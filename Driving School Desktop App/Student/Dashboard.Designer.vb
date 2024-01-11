@@ -38,6 +38,7 @@ Partial Class Dashboard
         imgHome = New PictureBox()
         PanelDesktop = New Panel()
         PictureBox1 = New PictureBox()
+        PictureBox2 = New PictureBox()
         PanelRibbon.SuspendLayout()
         CType(iconCurrentForm, ComponentModel.ISupportInitialize).BeginInit()
         PanelMenu.SuspendLayout()
@@ -45,11 +46,13 @@ Partial Class Dashboard
         CType(imgHome, ComponentModel.ISupportInitialize).BeginInit()
         PanelDesktop.SuspendLayout()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' PanelRibbon
         ' 
         PanelRibbon.BackColor = Color.FromArgb(CByte(246), CByte(107), CByte(7))
+        PanelRibbon.Controls.Add(PictureBox2)
         PanelRibbon.Controls.Add(Label2)
         PanelRibbon.Controls.Add(Label1)
         PanelRibbon.Controls.Add(labelcurrentForm)
@@ -268,6 +271,16 @@ Partial Class Dashboard
         PictureBox1.TabIndex = 0
         PictureBox1.TabStop = False
         ' 
+        ' PictureBox2
+        ' 
+        PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), Image)
+        PictureBox2.Location = New Point(1423, 19)
+        PictureBox2.Name = "PictureBox2"
+        PictureBox2.Size = New Size(49, 43)
+        PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox2.TabIndex = 7
+        PictureBox2.TabStop = False
+        ' 
         ' Dashboard
         ' 
         AutoScaleDimensions = New SizeF(13F, 32F)
@@ -289,6 +302,7 @@ Partial Class Dashboard
         CType(imgHome, ComponentModel.ISupportInitialize).EndInit()
         PanelDesktop.ResumeLayout(False)
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -307,4 +321,5 @@ Partial Class Dashboard
     Friend WithEvents Label1 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label2 As Label
+    Friend WithEvents PictureBox2 As PictureBox
 End Class

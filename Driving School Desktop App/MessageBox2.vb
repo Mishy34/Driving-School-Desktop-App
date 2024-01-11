@@ -12,6 +12,9 @@
             MessageBox1.MessageName.Text = "Booking Request"
             MessageBox1.Message.Text = "Your request is submitted! Admin will contact you!"
             MessageBox1.MessageButton.Text = "Ok"
+
+        ElseIf Button2.Text = "Yes" Then
+            Application.ExitThread()
         End If
     End Sub
 End Class
